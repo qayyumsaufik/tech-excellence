@@ -1,6 +1,6 @@
 :root {
   --color-primary: #010101;
-  --color-secondary: #6e45ff;
+  --color-secondary: #4a45ff;
   --color-tertiary: #3dfd98;
 }
 
@@ -2105,10 +2105,6 @@ textarea.w-input,textarea.w-select {
   background-color: var(--color-primary) !important;
 }
 
-.home-hero_pillar {
-  background: var(--color-secondary) !important;
-  border: .03125rem solid var(--color-tertiary);
-}
 
 .tab-link {
   background-color: var(--color-secondary) !important;
@@ -2131,4 +2127,21 @@ textarea.w-input,textarea.w-select {
 .nav_logo img {
   height: 45px;
   width: auto;
+}
+
+.home-hero_lines path[mask] {
+    fill: #3dfd98;
+    display: none;
+}
+
+.special-font {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: italic;
+    /* padding: 0 20px; */
+    padding-right: 15px;
+}
+
+.svg-align-center.w-embed svg, .svg-align-center.w-embed svg{
+    fill: #4a45ff;
 }

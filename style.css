@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #010101;
-  --color-secondary: #4a45ff;
+  --color-primary: #131335;
+  --color-secondary: #3dfd98;
   --color-tertiary: #3dfd98;
 }
 
@@ -799,6 +799,39 @@ textarea.w-input,textarea.w-select {
 
 .w-hidden-main {
     display: none!important
+}
+
+/* GSAP Animated Lines Section */
+.section_animated-custom {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background: var(--color-primary);
+  overflow: hidden;
+}
+
+.custom-animation-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+#gsap-lines-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .section_animated-custom {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section_animated-custom {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -2143,5 +2176,14 @@ textarea.w-input,textarea.w-select {
 }
 
 .svg-align-center.w-embed svg, .svg-align-center.w-embed svg{
-    fill: #4a45ff;
+    fill: #3dfd98;
+}
+
+.green-font {
+    color: var(--color-secondary);
+}
+
+
+.default-header {
+    color: var(--color-primary) !important;
 }

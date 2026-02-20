@@ -28,6 +28,7 @@
     crossorigin="anonymous" /> -->
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="identity.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2760,6 +2761,80 @@
         </div>
       </section>
       
+    <!-- ========== IDENTITY — Stacking Scroll Sections ========== -->
+      <div class="identity">
+
+        <!-- Card 1 -->
+        <section class="identity__card" data-index="1">
+          <div class="container-large">
+            <div class="identity__row">
+              <div class="identity__left">
+                <div class="identity__number">1</div>
+              </div>
+              <div class="identity__right">
+                <h2 class="identity__title">Expert-Led Engineering</h2>
+                <p class="identity__desc">Our team designs software systems, AI pipelines, and automation logic. We
+                  solve complex technical problems with clear implementations.</p>
+                <div class="identity__img-wrap">
+                  <img
+                    src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+                    alt="Team of engineers working together on code projections" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card 2 -->
+        <section class="identity__card" data-index="2">
+          <div class="container-large">
+            <div class="identity__row">
+              <div class="identity__left">
+                <div class="identity__number">2</div>
+              </div>
+              <div class="identity__right">
+                <h2 class="identity__title">Infrastructure-Grade AI
+                </h2>
+                <p class="identity__desc">The platform runs on modern compute, data, and model infrastructure. It
+                  follows the same architectural principles used in advanced AI systems.
+
+                </p>
+                <div class="identity__img-wrap">
+                  <img
+                    src="assets/Expert-Led.webp"
+                    alt="AI neural network visualization representing intelligent automation" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card 3 -->
+        <section class="identity__card" data-index="3">
+          <div class="container-large">
+            <div class="identity__row">
+              <div class="identity__left">
+                <div class="identity__number">3</div>
+              </div>
+              <div class="identity__right">
+                <h2 class="identity__title">Performance by Design
+                </h2>
+                <p class="identity__desc">We build carefully and intentionally. Our process focuses on security,
+                  consistency, and long-term improvement.
+
+                </p>
+                <div class="identity__img-wrap">
+                  <img
+                    src="assets/Innovation.webp"
+                    alt="Secure server infrastructure with encryption visualization" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
       <div data-theme="light">
         <section class="section background-gradient-pink-light">
           <div class="container-large">
@@ -3732,6 +3807,9 @@
       document.body.appendChild(slickScript);
     }
   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="identity.js"></script>
 </body>
 
 </html>

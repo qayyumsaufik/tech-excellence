@@ -1,0 +1,151 @@
+/* ============================================
+   Identity — Stacking Scroll Sections
+   ============================================ */
+
+/* --- Local design tokens --- */
+:root {
+  --id-bg-dark: #010101;
+  --id-text-white: #ffffff;
+  --id-text-muted: rgba(255, 255, 255, 0.55);
+  --id-border: rgba(255, 255, 255, 0.15);
+  --id-radius: 12px;
+}
+
+/* --- Wrapper --- */
+.identity {
+  position: relative;
+}
+
+/* --- Each Card --- */
+.identity__card {
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  background-color: var(--id-bg-dark);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 60px 0;
+  will-change: opacity;
+  border-top: 1px solid var(--id-border);
+}
+
+.identity__card:nth-child(1) { z-index: 1; }
+.identity__card:nth-child(2) { z-index: 2; }
+.identity__card:nth-child(3) { z-index: 3; }
+
+/* --- Inner container (reuse Webflow's container-large) --- */
+.identity__card .container-large {
+  width: 100%;
+}
+
+/* --- Two-column row --- */
+.identity__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  width: 100%;
+}
+
+/* --- Left column (number) --- */
+.identity__left {
+  width: 40%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.identity__number {
+  font-size: clamp(6rem, 5rem + 8vw, 14rem);
+  font-weight: 700;
+  line-height: 0.85;
+  color: rgba(255, 255, 255, 0.15);
+  user-select: none;
+}
+
+/* --- Right column (content) --- */
+.identity__right {
+  width: 60%;
+  flex-shrink: 0;
+}
+
+.identity__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--id-text-white);
+  margin: 0 0 1.25rem;
+}
+
+.identity__desc {
+  font-size: 1.065rem;
+  font-weight: 400;
+  color: var(--id-text-muted);
+  line-height: 1.65;
+  max-width: 520px;
+  margin: 0 0 2rem;
+}
+
+.identity__img-wrap {
+  width: 100%;
+  max-width: 540px;
+  border-radius: var(--id-radius);
+  overflow: hidden;
+}
+
+.identity__img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--id-radius);
+}
+
+/* ============================
+   Responsive: tablet ≤991px
+   ============================ */
+@media (max-width: 991px) {
+  .identity__row {
+    gap: 2.5rem;
+  }
+  .identity__title {
+    font-size: 2rem;
+  }
+  .identity__desc {
+    font-size: 1rem;
+  }
+  .identity__card {
+    min-height: 80vh;
+  }
+}
+
+/* ============================
+   Responsive: mobile ≤767px
+   ============================ */
+@media (max-width: 767px) {
+  .identity__row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .identity__left,
+  .identity__right {
+    width: 100%;
+  }
+  .identity__number {
+    font-size: clamp(4rem, 3rem + 5vw, 6rem);
+  }
+  .identity__title {
+    font-size: 1.75rem;
+  }
+  .identity__desc {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+  .identity__img-wrap {
+    max-width: 100%;
+  }
+  .identity__card {
+    min-height: auto;
+    padding: 3rem 0;
+  }
+}

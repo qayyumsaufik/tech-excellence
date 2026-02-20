@@ -2176,7 +2176,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .svg-align-center.w-embed svg, .svg-align-center.w-embed svg{
-    fill: #3dfd98;
+    fill: var(--text--primary);
 }
 
 .green-font {
@@ -2186,4 +2186,321 @@ textarea.w-input,textarea.w-select {
 
 .default-header {
     color: var(--color-primary) !important;
+}
+
+/* ============================================
+   RANKING SECTION
+   ============================================ */
+.vyro-ranking {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: 'Manrope', sans-serif;
+}
+
+.vyro-ranking__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.vyro-ranking__bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vyro-ranking__overlay {
+  position: absolute;
+  inset: 0;
+  background: #131335c4;
+}
+
+.vyro-ranking__content {
+  position: relative;
+  z-index: 1;
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.vyro-ranking__tag {
+  display: inline-block;
+  background: #3b3b3b;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 0.5em 2.5em;
+  border-radius: 14px;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.vyro-ranking__title {
+  font-size: clamp(3.5rem, 3rem + 5vw, 8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin-bottom: 0.25rem;
+}
+
+.vyro-ranking__subtitle {
+  font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+  font-weight: 500;
+  color: rgb(254 254 254 / 82%);
+  margin-bottom: 4rem;
+}
+
+.vyro-ranking__cta {
+  font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+  font-weight: 500;
+  color: rgb(255 255 255 / 91%);
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.vyro-ranking__icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.vyro-ranking__icon svg,
+.vyro-ranking__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: vyro-ranking-float 3s ease-in-out infinite;
+}
+
+@keyframes vyro-ranking-float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.05); }
+}
+
+/* ============================================
+   IDENTITY — Stacking Scroll Sections
+   ============================================ */
+.vyro-identity {
+  position: relative;
+  font-family: 'Manrope', sans-serif;
+}
+
+.vyro-identity__card {
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  background-color: #131335;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.vyro-identity__border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.vyro-identity__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 100%;
+}
+
+.vyro-identity__left {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.vyro-identity__right {
+  width: 60%;
+  flex-shrink: 0;
+}
+
+.vyro-identity__number {
+  font-size: clamp(6rem, 5rem + 8vw, 14rem);
+  font-weight: 800;
+  line-height: 0.85;
+  color: rgb(255 255 255 / 88%);
+  user-select: none;
+}
+
+.vyro-identity__info {
+  min-width: 0;
+}
+
+.vyro-identity__title {
+  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
+
+.vyro-identity__desc {
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 3rem;
+}
+
+.vyro-identity__img-wrap {
+  width: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.vyro-identity__img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1.5rem;
+}
+
+/* --- Ranking & Identity Responsive: ≤1024px --- */
+@media (max-width: 1024px) {
+  .vyro-ranking { min-height: 70vh; }
+  .vyro-ranking__tag { font-size: 16px; padding: 0.45em 2em; }
+  .vyro-ranking__subtitle { font-size: clamp(1.125rem, 1rem + 0.6vw, 1.375rem); }
+  .vyro-identity__row { gap: 2rem; }
+  .vyro-identity__title { font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem); }
+  .vyro-identity__desc { font-size: clamp(0.875rem, 0.8rem + 0.35vw, 1rem); }
+  .vyro-identity__card { min-height: 80vh; }
+}
+
+/* --- Ranking & Identity Responsive: ≤576px --- */
+@media (max-width: 576px) {
+  .vyro-ranking { min-height: 60vh; }
+  .vyro-ranking__content { padding: 4rem 0; }
+  .vyro-ranking__tag { font-size: 14px; padding: 0.4em 1.8em; border-radius: 10px; }
+  .vyro-ranking__subtitle { font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem); margin-bottom: 3rem; }
+  .vyro-ranking__cta { font-size: clamp(0.875rem, 0.8rem + 0.35vw, 1rem); }
+  .vyro-identity__row { flex-direction: column; gap: 1.5rem; }
+  .vyro-identity__left, .vyro-identity__right { width: 100%; }
+  .vyro-identity__number { font-size: clamp(4rem, 3rem + 5vw, 6rem); }
+  .vyro-identity__title { font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem); }
+  .vyro-identity__desc { font-size: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem); max-width: 100%; }
+  .vyro-identity__card { min-height: auto; padding: 4rem 0; }
+}
+
+
+.benifit-card-outer
+ {
+    width: 100%;
+    border-radius: 32px;
+    opacity: 1;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    height: min-content;
+    overflow: visible;
+    padding: 8px;
+    position: relative;
+ }
+
+ .benifit-card-outer:after {
+    content: "";
+    border-width: 1px;
+    border-color: #00000014;
+    border-style: solid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0px;
+    top: 0px;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.benefit-card {
+    opacity: 1;
+    background-color: #f9f9f9;
+    align-items: center;
+    display: flex;
+    flex: 1 0 0px;
+    flex-flow: row;
+    gap: 10px;
+    height: min-content;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    width: 1px;
+    border-radius: 24px;
+}
+
+.benefit-card:after {
+    content: "";
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0px;
+    top: 0px;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.beni-card-wrapper {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0px;
+    flex-flow: column;
+    gap: 12px;
+    height: min-content;
+    padding: 0px 28px 28px;
+    position: relative;
+    width: 100%;
+    color: black;
+}
+
+.card-bg-img {
+    position: absolute;
+    border-radius: inherit;
+    inset: 0px;
+    pointer-events: none
+}
+.ben-card-icon {
+    max-width: 300px;
+    min-height: 185px;
+}
+.beni-desc{
+        color: #707070;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.full-beni-card {
+    grid-area: Area;
+}
+.benefit-card_header h3 {
+
+}
+
+.after-hero-section {
+    position: relative;
+    z-index: 1;
+    top: -69px;
+    border-start-end-radius: 64px;
+    border-start-start-radius: 64px;
+    overflow: hidden;
 }

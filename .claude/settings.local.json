@@ -4,7 +4,16 @@
       "Bash(cd:*)",
       "Bash(echo:*)",
       "Bash(dir:*)",
-      "Bash(ren \"c:\\\\Users\\\\Saufik Dev\\\\OneDrive\\\\Desktop\\\\techEx\\\\platform-overview\" \"platform-overview.html\")"
+      "Bash(ren \"c:\\\\Users\\\\Saufik Dev\\\\OneDrive\\\\Desktop\\\\techEx\\\\platform-overview\" \"platform-overview.html\")",
+      "Bash(curl:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(fi)",
+      "Bash(done)",
+      "WebFetch(domain:cdn.prod.website-files.com)",
+      "WebFetch(domain:www.fringe.us)",
+      "Bash(python:*)",
+      "Bash(findstr:*)"
     ]
   }
 }

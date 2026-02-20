@@ -1029,7 +1029,7 @@ figcaption {
 .section_home-hero {
     background-color: var(--neutral--black);
     padding-top: 8.5rem;
-    padding-bottom: 1.5rem
+    padding-bottom: 8.5rem
 }
 
 .section_home-hero.is-v2 {
@@ -1193,9 +1193,6 @@ figcaption {
     margin-right: auto
 }
 
-.text-wrapper.is-benefit-card {
-    max-width: 31.25rem
-}
 
 .text-wrapper.is-cta-tag {
     flex-flow: column;
@@ -1543,7 +1540,7 @@ figcaption {
 .benefits {
     grid-column-gap: 1.25rem;
     grid-row-gap: 1.25rem;
-    grid-template: "Area Area"". ."/1fr 1fr;
+    grid-template:  ". ." "Area Area" / 1fr 1fr;
     grid-auto-columns: 1fr;
     display: grid
 }
@@ -1552,8 +1549,7 @@ figcaption {
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
     background-image: linear-gradient(#fffc,#ffffff80);
-    border: 1px solid #7c26d11a;
-    border-radius: 1.25rem;
+    border-radius: 28px;
     flex-flow: column;
     justify-content: space-between;
     display: flex;
@@ -1571,9 +1567,6 @@ figcaption {
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: 2.5rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
     display: flex
 }
 
@@ -1585,14 +1578,15 @@ figcaption {
 }
 
 .category-tag {
-    background-color: var(--background--primary-light);
+    /* background-color: var(--background--primary-light); */
+    background-color: #3dfd9875;
     color: var(--text--tertiary);
     letter-spacing: .05em;
     text-transform: uppercase;
     border-radius: .5rem;
     padding: .5rem .75rem .4rem;
     font-size: .75rem;
-    font-weight: 500
+    font-weight: 600
 }
 
 .category-tag:where(.w-variant-d9156639-7aad-80f7-c334-b3894caf4203) {
@@ -3112,12 +3106,6 @@ figcaption {
         max-width: none
     }
 
-    .benefit-card_header {
-        padding-top: 1.5rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem
-    }
-
     .cta {
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
@@ -4337,13 +4325,6 @@ figcaption {
         object-fit: cover;
         aspect-ratio: 343/140;
         object-fit: cover
-    }
-
-    .benefit-card_header {
-        text-align: center;
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 2.5rem
     }
 
     .section_small {

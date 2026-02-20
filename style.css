@@ -2229,14 +2229,14 @@ textarea.w-input,textarea.w-select {
 
 .vyro-ranking__tag {
   display: inline-block;
-  background: #3b3b3b;
-  color: #fff;
-  font-size: 19px;
-  font-weight: 500;
-  padding: 0.5em 2.5em;
-  border-radius: 14px;
-  margin-bottom: 2rem;
-  letter-spacing: 1px;
+    background: #3dfd98;
+    color: #131335;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 0.5em 2.5em;
+    border-radius: 14px;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
 }
 
 .vyro-ranking__title {
@@ -2503,4 +2503,169 @@ textarea.w-input,textarea.w-select {
     border-start-end-radius: 64px;
     border-start-start-radius: 64px;
     overflow: hidden;
+}
+
+/* ============================================
+   SPREAD CARDS — Orbital Circle Section
+   ============================================ */
+.spread-cards {
+  position: relative;
+  min-height: 100vh;
+  background: #EDEEF2;
+  font-family: 'Manrope', sans-serif;
+}
+
+.spread-cards__stage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+/* --- Concentric orbital rings --- */
+.spread-cards__ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 1.5px solid rgba(180, 200, 220, 0.4);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.spread-cards__ring--inner {
+  width: 380px;
+  height: 280px;
+  border-radius: 50%;
+}
+
+.spread-cards__ring--outer {
+  width: 620px;
+  height: 460px;
+  border-radius: 50%;
+  border-color: rgba(140, 210, 240, 0.28);
+}
+
+/* --- Glowing orb --- */
+.spread-cards__orb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  transform: translate(-50%, -50%);
+  margin-top: -110px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #7dd3fc, #3b82f6 50%, #1e3a8a);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 60px rgba(59, 130, 246, 0.2);
+  z-index: 5;
+  opacity: 0;
+  will-change: opacity;
+}
+
+/* --- Center text content --- */
+.spread-cards__center {
+  position: absolute;
+  text-align: center;
+  z-index: 5;
+  pointer-events: none;
+  max-width: 380px;
+  padding: 0 20px;
+  opacity: 0;
+  transform: scale(0.85);
+  will-change: opacity, transform;
+}
+
+.spread-cards__heading {
+  font-size: clamp(2rem, 1.4rem + 3vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.18;
+  color: #1a1a2e;
+  margin: 0 0 16px 0;
+}
+
+.spread-cards__subtitle {
+  font-size: clamp(0.85rem, 0.78rem + 0.35vw, 1rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* --- Card base --- */
+.spread-cards__card {
+  position: absolute;
+  border-radius: 18px;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+  will-change: transform, opacity;
+  z-index: 4;
+  padding: 5px;
+  transition: box-shadow 0.35s ease;
+}
+
+.spread-cards__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+}
+
+.spread-cards__card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.14);
+}
+
+/* --- Size variants --- */
+.spread-cards__card--lg {
+  width: 170px;
+  height: 190px;
+  margin-top: -95px;
+  margin-left: -85px;
+}
+
+.spread-cards__card--md {
+  width: 140px;
+  height: 155px;
+  margin-top: -77px;
+  margin-left: -70px;
+}
+
+.spread-cards__card--sm {
+  width: 115px;
+  height: 125px;
+  margin-top: -62px;
+  margin-left: -57px;
+}
+
+/* --- Spread Cards Responsive: ≤991px --- */
+@media (max-width: 991px) {
+  .spread-cards__ring--inner { width: 290px; height: 220px; }
+  .spread-cards__ring--outer { width: 480px; height: 360px; }
+  .spread-cards__orb { margin-top: -85px; }
+  .spread-cards__card--lg  { width: 130px; height: 145px; margin-top: -72px; margin-left: -65px; }
+  .spread-cards__card--md  { width: 110px; height: 120px; margin-top: -60px; margin-left: -55px; }
+  .spread-cards__card--sm  { width: 90px;  height: 98px;  margin-top: -49px; margin-left: -45px; }
+  .spread-cards__heading { font-size: clamp(1.5rem, 1.1rem + 2vw, 2.2rem); }
+  .spread-cards__subtitle { font-size: clamp(0.78rem, 0.72rem + 0.3vw, 0.88rem); }
+  .spread-cards__center { max-width: 280px; }
+}
+
+/* --- Spread Cards Responsive: ≤576px --- */
+@media (max-width: 576px) {
+  .spread-cards__ring--inner { width: 200px; height: 150px; }
+  .spread-cards__ring--outer { width: 310px; height: 230px; }
+  .spread-cards__orb { width: 20px; height: 20px; margin-top: -65px; }
+  .spread-cards__card--lg  { width: 90px;  height: 100px; margin-top: -50px; margin-left: -45px; }
+  .spread-cards__card--md  { width: 78px;  height: 86px;  margin-top: -43px; margin-left: -39px; }
+  .spread-cards__card--sm  { width: 65px;  height: 72px;  margin-top: -36px; margin-left: -32px; }
+  .spread-cards__heading { font-size: clamp(1.15rem, 0.9rem + 1.4vw, 1.5rem); }
+  .spread-cards__subtitle { font-size: 0.75rem; }
+  .spread-cards__center { max-width: 190px; }
 }

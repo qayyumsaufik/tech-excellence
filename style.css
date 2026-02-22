@@ -2370,6 +2370,7 @@ textarea.w-input,textarea.w-select {
   height: auto;
   display: block;
   border-radius: 1.5rem;
+  opacity: 0.5;
 }
 
 /* --- Ranking & Identity Responsive: ≤1024px --- */

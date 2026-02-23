@@ -3427,3 +3427,20 @@ textarea.w-input,textarea.w-select {
     font-weight: 600;
     letter-spacing: 1px;
 }
+
+.nav_dropdown_menu_link.nav-coming-soon {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+    white-space: nowrap;
+}
+
+.nav-coming-soon .commin-soon {
+    display: inline-block;
+    top: -2px;
+    font-size: 10px;
+}
+
+.nav-coming-soon .nav_dropdown_menu_link_arrow {
+    display: none !important;
+}

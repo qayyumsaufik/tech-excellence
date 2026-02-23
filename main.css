@@ -460,8 +460,8 @@ figcaption {
 }
 
 .section {
-    padding-top: 7rem;
-    padding-bottom: 7rem
+    padding-top: 5rem;
+    padding-bottom: 5rem
 }
 
 .section.background-gradient-pink-light.overflow-hidden {

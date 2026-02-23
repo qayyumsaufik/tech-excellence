@@ -1874,21 +1874,7 @@
     });
   </script>
 
-  <!--nav overlay-->
-  <script>
-    $(function () {
-      $('.nav_menu_links').hover(
-        function () {
-          $('.nav_overlay').css('display', 'block').stop(true).animate({ opacity: 1 }, 400);
-        },
-        function () {
-          $('.nav_overlay').stop(true).animate({ opacity: 0 }, 1000, function () {
-            $(this).css('display', 'none');
-          });
-        }
-      );
-    });
-  </script>
+
 
   <!-- Skip-to-main script -->
   <script defer>

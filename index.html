@@ -810,7 +810,9 @@
         <div class="container-large">
           <div class="nav_row"><a href="index.html" aria-label="Home link" aria-current="page"
               class="nav_brand w-nav-brand w--current">
-              <div class="nav_logo"><img src="assets/header-logo.png" alt="Tech Excellence logo" loading="eager" />
+              <div class="nav_logo">
+                <img class="dark-theme-logo" src="assets/header-logo.png" alt="Tech Excellence logo" loading="eager" />
+                <img class="white-theme-logo" src="assets/header-logo-updated-black.png" alt="Tech Excellence logo" loading="eager" />
               </div>
             </a>
             <nav role="navigation" class="nav_menu w-nav-menu">
@@ -1279,11 +1281,12 @@
                 </div>
                 <div class="pillars-wrapper">
                   <div class="home-hero_pillars">
-                    <div class="home-hero_pillar home-hero_pillar1">
+                    <div class="home-hero_pillar home-hero_pillar1 comming-prod">
                       <div class="home-hero_pillar_icon">
                         <img src="assets/hero_card_leaf.png" alt="CommandCore icon" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;" />
                       </div>
                       <div class="text-size-medium text-weight-medium">CommandCore </div>
+                       <div class="commin-soon">comming soon</div>
                     </div>
                     <div class="home-hero_pillar home-hero_pillar2">
                       <div class="home-hero_pillar_icon">
@@ -1291,17 +1294,19 @@
                       </div>
                       <div class="text-size-medium text-weight-medium">ConvoSense </div>
                     </div>
-                    <div class="home-hero_pillar home-hero_pillar3">
+                    <div class="home-hero_pillar home-hero_pillar3 comming-prod">
                       <div class="home-hero_pillar_icon">
                         <img src="assets/hero_card_leaf.png" alt="Engagebot icon" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;" />
                       </div>
                       <div class="text-size-medium text-weight-medium">Engagebot </div>
+                       <div class="commin-soon">comming soon</div>
                     </div>
-                    <div class="home-hero_pillar home-hero_pillar4">
+                    <div class="home-hero_pillar home-hero_pillar4 comming-prod">
                       <div class="home-hero_pillar_icon">
                         <img src="assets/hero_card_leaf.png" alt="Lead Sense icon" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;" />
                       </div>
                       <div class="text-size-medium text-weight-medium">Lead Sense</div>
+                      <div class="commin-soon">comming soon</div>
                     </div>
                   </div>
                 </div>
@@ -1523,8 +1528,10 @@
           </div>
         </section>
 
-        <!-- ========== RANKING SECTION ========== -->
-        <section class="vyro-ranking" id="ranking">
+      </div>
+
+      <!-- ========== RANKING SECTION ========== -->
+        <section class="vyro-ranking" id="ranking" data-theme="dark">
           <div class="vyro-ranking__bg">
             <video src="/assets/RANKING SECTION-bg.mp4" autoplay muted loop playsinline
               class="vyro-ranking__bg-video"></video>
@@ -1542,7 +1549,7 @@
         </section>
 
         <!-- ========== IDENTITY — Stacking Scroll Sections ========== -->
-        <div class="vyro-identity" id="identity">
+        <div class="vyro-identity" id="identity" data-theme="dark">
 
           <!-- Card 1 -->
           <div class="vyro-identity__card" data-index="0">
@@ -1612,10 +1619,9 @@
           </div>
 
         </div>
-      </div>
 
       <!-- ========== SPREAD CARDS — Orbital Circle ========== -->
-      <section class="spread-cards" id="spreadCards">
+      <section class="spread-cards" id="spreadCards" data-theme="light">
         <div class="spread-cards__stage">
 
           <!-- Concentric orbital rings -->
@@ -1659,7 +1665,7 @@
         </div>
       </section>
 
-      <section data-wf--request-demo--variant="base" class="section_small">
+      <section data-wf--request-demo--variant="base" class="section_small" data-theme="light">
         <div class="large-wrapper">
           <div class="request-demo-cta">
             <div class="request-demo-cta_content">

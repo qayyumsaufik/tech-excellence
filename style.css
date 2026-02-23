@@ -2623,7 +2623,7 @@ textarea.w-input,textarea.w-select {
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 14px;
+  border-radius: 40px;
 }
 
 .spread-cards__card:hover {

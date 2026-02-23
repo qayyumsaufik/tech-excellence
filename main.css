@@ -829,9 +829,9 @@ figcaption {
 
 .nav_dropdown_menu.w--open {
     background-color: #0000;
-    width: 53.125rem;
+    width: 40.125rem;
     padding-top: 1.875rem;
-    left: -16.375rem
+    left: -8.375rem;
 }
 
 .nav_dropdown_menu.is-solutions.w--open {
@@ -857,14 +857,15 @@ figcaption {
 }
 
 .nav_dropdown_menu_wrapper {
-    grid-column-gap: 2rem;
+   grid-column-gap: 2rem;
     grid-row-gap: 2rem;
-    background-color: var(--neutral--light-pink);
+    background-color: white;
     border-radius: 1.25rem;
     justify-content: space-between;
     padding: 1.5rem;
-    transition: transform .3s,opacity .4s;
-    display: flex
+    transition: transform .3s, opacity .4s;
+    display: flex;
+    box-shadow: 2px 0px 16px -1px #260b4029;
 }
 
 .platform_card {
@@ -6156,5 +6157,5 @@ figcaption {
     grid-area: span 1/span 1/span 1/span 1
 }
 .d-none {
-    display: none
+    display: none !important;
 }

@@ -2503,6 +2503,7 @@ textarea.w-input,textarea.w-select {
     overflow: hidden;
 }
 
+
 /* ============================================
    SPREAD CARDS — Orbital Circle Section
    ============================================ */
@@ -3393,7 +3394,7 @@ textarea.w-input,textarea.w-select {
     inset: 1.125rem auto auto -12.5rem;
 }
 .chip_right-line {
-    background-image: linear-gradient(90deg, var(--brand--coral), #f25c3a00);
+    background-image: linear-gradient(90deg, var(--brand--purple-light), #f25c3a00);
     width: 12.5rem;
     height: .0625rem;
     position: absolute;

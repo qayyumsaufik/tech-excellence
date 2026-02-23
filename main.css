@@ -6,7 +6,7 @@
     --border--tertiary: var(--brand--green--dark);
     --border--secondary: var(--brand--purple-medium);
     --brand--purple-dark: #5a33e6;
-    --text--primary: var(--brand--purple-dark);
+    --text--primary: #010101;
     --text--secondary: var(--brand--purple-medium);
     --text--paragraph-dark: var(--neutral--black);
     --text--tertiary: var(--brand--purple-light);
@@ -1233,8 +1233,8 @@ figcaption {
 }
 
 .u-theme-light {
-    --_theme-nav---secondary-button--border: var(--border--secondary);
-    --_theme-nav---secondary-button--text: var(--text--secondary);
+    --_theme-nav---secondary-button--border: #131335;
+    --_theme-nav---secondary-button--text: #131335;
     --_theme-nav---secondary-button--hover-border: var(--border--tertiary);
     --_theme-nav---primary-button--border: var(--border--secondary);
     --_theme-nav---primary-button--background: var(--background--secondary-dark);
@@ -1247,7 +1247,7 @@ figcaption {
     --_theme-nav---secondary-button--hover-stop: #4612760d;
     --_theme-nav---primary-button--hover-start: var(--background--tertiary-dark);
     --_theme-nav---primary-button--hover-stop: var(--background--secondary-dark);
-    --_theme-nav---dropdown--text: var(--brand--purple-medium);
+    --_theme-nav---dropdown--text: #131335;
     --_theme-nav---dropdown--hover: #7c26d11a;
     --_theme-nav---button-bg: #7c26d11a;
     --_theme-nav---hamburger-line: var(--brand--purple-medium)
@@ -1548,12 +1548,13 @@ figcaption {
 .benefit-card {
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
-    background-image: linear-gradient(#fffc,#ffffff80);
+    background-image: linear-gradient(#131335, #131335);
     border-radius: 28px;
     flex-flow: column;
     justify-content: space-between;
     display: flex;
-    overflow: hidden
+    overflow: hidden;
+    height: 100%;
 }
 
 .benefit-card_image {
@@ -1567,7 +1568,8 @@ figcaption {
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
-    display: flex
+    display: flex;
+    margin-top: 16px;
 }
 
 .benefit-card_header.is-center {
@@ -1579,14 +1581,14 @@ figcaption {
 
 .category-tag {
     /* background-color: var(--background--primary-light); */
-    background-color: #3dfd9875;
-    color: var(--text--tertiary);
+    background-color: #3dfd98;
+    color: #131335;
     letter-spacing: .05em;
     text-transform: uppercase;
     border-radius: .5rem;
     padding: .5rem .75rem .4rem;
     font-size: .75rem;
-    font-weight: 600
+    font-weight: 600;
 }
 
 .category-tag:where(.w-variant-d9156639-7aad-80f7-c334-b3894caf4203) {

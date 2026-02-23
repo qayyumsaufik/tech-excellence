@@ -6,7 +6,7 @@
     --border--tertiary: var(--brand--green--dark);
     --border--secondary: var(--brand--purple-medium);
     --brand--purple-dark: #5a33e6;
-    --text--primary: var(--brand--purple-dark);
+    --text--primary: #010101;
     --text--secondary: var(--brand--purple-medium);
     --text--paragraph-dark: var(--neutral--black);
     --text--tertiary: var(--brand--purple-light);
@@ -1746,7 +1746,7 @@ figcaption {
 }
 
 .how-it-works--big-card_number {
-    background-image: linear-gradient(180deg,var(--background--tertiary-dark),var(--background--secondary-dark));
+    background-color: #131335;
     border-radius: .75rem;
     flex-flow: column;
     justify-content: center;
@@ -7841,11 +7841,11 @@ textarea.w-input,textarea.w-select {
 }
 
 .platform-sticky-wrap .how_it-works-big-card {
-    background-color: #f9f9f9 !important;
-    background-image: url('https://framerusercontent.com/images/5sE7c1qSEO1TmxpfY37lffrdVLQ.png') !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+       background-color: #f6f6fd !important;
+    /* background-image: url(https://framerusercontent.com/images/5sE7c1qSEO1TmxpfY37lffrdVLQ.png) !important; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
     border-radius: 24px;
     position: relative;
     overflow: hidden;
@@ -7871,7 +7871,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .platform-sticky-wrap .how-it-works-text_wrap .text-size-medium {
-    color: #707070 !important;
+    color: #262626 !important;
 }
 
 .platform-sticky-wrap .how-it-works--big-card_number {
@@ -8008,14 +8008,14 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-differentiator-box {
-  background: rgba(124,38,209,0.15);
-  border: 1px solid rgba(124,38,209,0.3);
-  border-radius: 16px;
-  padding: 28px;
+  background: rgb(0 0 0 / 15%);
+    border: 1px solid #3dfd9838;
+    border-radius: 16px;
+    padding: 28px;
 }
 
 .cs-differentiator-box .cs-diff-label {
-  color: var(--brand--purple-light);
+  color: #3dfd98;
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -8045,7 +8045,6 @@ textarea.w-input,textarea.w-select {
 /* ========== CS: HOW IT WORKS ========== */
 .cs-steps-section {
   padding: 120px 0;
-  background: linear-gradient(180deg, #F4E5FA 20%, #faf5fc);
 }
 
 .cs-section-header {
@@ -8085,8 +8084,10 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-step-card {
-  text-align: center;
-  padding: 48px 32px;
+     text-align: center;
+    padding: 48px 32px;
+    background: #ffffff;
+    border-radius: 24px
 }
 
 .cs-step-number {
@@ -8196,7 +8197,7 @@ textarea.w-input,textarea.w-select {
   width: 4px;
   height: 28px;
   border-radius: 0 4px 4px 0;
-  background: linear-gradient(180deg, #7C26D1, #714df0);
+  background: #131335;
   transition: transform 0.3s ease;
 }
 
@@ -8206,7 +8207,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-vtab-button.active {
-  background: rgba(124,38,209,0.10);
+  background: #1313351c;
   color: #010101;
   font-weight: 700;
 }
@@ -8253,9 +8254,9 @@ textarea.w-input,textarea.w-select {
 
 .cs-tab-text > p {
   font-size: 1.1rem;
-  color: #5a3d6e;
+  color: var(--text--primary);
   line-height: 1.7;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .cs-feature-list {
@@ -8264,7 +8265,7 @@ textarea.w-input,textarea.w-select {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 3px;
 }
 
 .cs-feature-list li {
@@ -8272,13 +8273,13 @@ textarea.w-input,textarea.w-select {
   align-items: flex-start;
   gap: 12px;
   font-size: 1rem;
-  color: #5a3d6e;
+  color: var(--text--primary);;
   line-height: 1.6;
 }
 
 .cs-feature-list li::before {
   content: '\2713';
-  color: #7C26D1;
+  color: #131335;
   font-weight: 700;
   flex-shrink: 0;
   margin-top: 2px;
@@ -8300,7 +8301,6 @@ textarea.w-input,textarea.w-select {
 /* ========== CS: USE CASES ========== */
 .cs-usecases-section {
   padding: 120px 0;
-  background: linear-gradient(180deg, #faf5fc, #F4E5FA);
 }
 
 .cs-usecases-grid {
@@ -8310,7 +8310,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-usecase-card {
-  background: #ffffff;
+  background: #131335;
   border-radius: 24px;
   padding: 48px;
   border: 1px solid rgba(124,38,209,0.10);
@@ -8321,33 +8321,31 @@ textarea.w-input,textarea.w-select {
 
 .cs-usecase-card::before {
   content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #7C26D1, #714df0);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s ease;
+    position: absolute;
+    /* top: auto; */
+    left: 0;
+    /* right: 0; */
+    height: 94px;
+    /* background: linear-gradient(90deg, #7C26D1, #714df0); */
+    /* transform: scaleX(0); */
+    transform-origin: left;
+    transition: transform 0.4s ease;
+    box-shadow: 0px -91px 136px 0px #4a45ff69;
+    width: 100%;
+    bottom: -120px;
 }
 
-.cs-usecase-card:hover::before {
-  transform: scaleX(1);
-}
 
 .cs-usecase-card:hover {
   box-shadow: 0 0 30px 1px rgba(113,77,240,0.3);
-  border-color: rgba(124,38,209,0.20);
-  transform: translateY(-4px);
 }
 
 .cs-usecase-icon {
   width: 64px;
   height: 64px;
   border-radius: 16px;
-  background: linear-gradient(135deg, #7C26D1, #714df0);
-  color: #ffffff;
+      background: white;
+    color: #131335;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8358,12 +8356,11 @@ textarea.w-input,textarea.w-select {
 .cs-usecase-card h3 {
   font-size: 1.35rem;
   font-weight: 700;
-  color: #010101;
   margin-bottom: 8px;
 }
 
 .cs-quick-win {
-  color: #7C26D1;
+  color: #3dfd98;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 14px;
@@ -8385,17 +8382,14 @@ textarea.w-input,textarea.w-select {
   align-items: center;
   gap: 10px;
   font-size: 0.95rem;
-  color: #5a3d6e;
   transition: transform 0.3s ease;
 }
 
-.cs-usecase-details li:hover {
-  transform: translateX(4px);
-}
+
 
 .cs-usecase-details li::before {
   content: '\2192';
-  color: #7C26D1;
+  color: #3dfd98;
   font-weight: 700;
   flex-shrink: 0;
 }

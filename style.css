@@ -2145,15 +2145,24 @@ textarea.w-input,textarea.w-select {
   color: var(--color-tertiary) !important;
 }
 
-.nav-wrapper,
-.nav-wrapper .nav,
 .nav-wrapper .nav.u-theme-dark {
   background: var(--color-primary) !important;
+}
+.nav-wrapper .nav.u-theme-light {
+  background: #ffffff !important;
 }
 
 .nav_logo img {
   height: 45px;
   width: auto;
+}
+
+.nav-wrapper .nav.u-theme-light img.dark-theme-logo {
+    display: none;
+}
+
+.nav-wrapper .nav.u-theme-dark img.white-theme-logo {
+    display: none;
 }
 
 .home-hero_lines path[mask] {
@@ -3402,4 +3411,18 @@ textarea.w-input,textarea.w-select {
 
 .benifit-card-outer.about-beni:after {
     border-color: #3dfd9842 !important;
+}
+
+.home-hero_pillar.comming-prod {
+        opacity: 0.5;
+}
+.commin-soon {
+    padding: 2px 8px;
+    position: relative;
+    top: -7px;
+    background: #714df059;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }

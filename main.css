@@ -388,8 +388,7 @@ figcaption {
 }
 
 .button.is-purple {
-    background-color: #fff0;
-    background-image: linear-gradient(0deg,var(--brand--purple-medium),var(--brand--purple-medium));
+    background-color: #714df0;
     color: var(--text--paragraph-light)
 }
 

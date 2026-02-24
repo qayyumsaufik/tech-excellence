@@ -2186,7 +2186,7 @@ textarea.w-input,textarea.w-select {
     color: var(--color-secondary);
 }
 .purple-font {
-    color: #714df0;
+    color: var(--text--secondary);
 }
 
 
@@ -3380,24 +3380,47 @@ textarea.w-input,textarea.w-select {
 /* ---------- FOOTER ---------- */
 .au-footer {
   background: var(--color-primary);
-  padding: 4rem 0 3rem;
+  padding: 4rem 0 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .au-footer__top {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 6rem;
 }
 
 .au-footer__brand {
   flex-shrink: 0;
 }
 
+.au-footer__brand-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+
+.au-footer__info p {
+  color:rgb(255 255 255 / 82%);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 0 0 0.4rem;
+}
+
+.au-footer__info a {
+  color: rgb(255 255 255 / 82%);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.au-footer__info a:hover {
+  color: var(--color-secondary);
+}
+
 .au-footer__cols {
   display: flex;
-  gap: 4rem;
+  gap: 6rem;
 }
 
 .au-footer__col {
@@ -3413,7 +3436,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .au-footer__link {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255 255 255 / 82%);
   font-size: 0.938rem;
   font-weight: 500;
   text-decoration: none;
@@ -3425,26 +3448,30 @@ textarea.w-input,textarea.w-select {
 }
 
 .au-footer__label {
-  color: rgba(255, 255, 255, 0.35);
+  color: rgb(255 255 255 / 82%);
   font-size: 0.813rem;
   margin: 0;
 }
 
 .au-footer__social {
   display: flex;
+  flex-direction: column;
   gap: 0.75rem;
 }
 
 .au-footer__social-link {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.4);
-  transition: color 0.3s, border-color 0.3s;
+  gap: 0.6rem;
+  color: rgb(255 255 255 / 82%);
+  font-size: 0.938rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.au-footer__social-link span {
+  line-height: 1;
 }
 
 .au-footer__social-link:hover {
@@ -3607,4 +3634,29 @@ textarea.w-input,textarea.w-select {
 
 .nav-coming-soon .nav_dropdown_menu_link_arrow {
     display: none !important;
+}
+
+.platform_card_description {
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 2px 0 0;
+    padding-right: 20px;
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+.platform_card_header {
+    margin-bottom: 0 !important;
+}
+
+.nav_dropdown_menu_card-wrapper {
+    min-height: 100% !important;
+}
+
+.nav_dropdown_menu_card-wrapper .platform_card {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
 }

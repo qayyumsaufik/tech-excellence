@@ -807,7 +807,7 @@ figcaption {
 .platform_card {
     grid-column-gap: .625rem;
     grid-row-gap: .625rem;
-    background-image: linear-gradient(180deg,var(--brand--purple-dark)20%,var(--brand--purple-medium));
+    background-color: #131335;
     border-radius: .75rem;
     flex-flow: column;
     width: 100%;
@@ -839,7 +839,6 @@ figcaption {
 }
 
 .light-gradient_card_bg {
-    background-image: linear-gradient(180deg,var(--brand--purple-dark)20%,var(--brand--purple-light));
     opacity: 0;
     pointer-events: none;
     width: 100%;
@@ -8713,3 +8712,5 @@ textarea.w-input,textarea.w-select {
 
 
 }
+
+

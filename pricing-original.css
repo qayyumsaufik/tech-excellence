@@ -70,7 +70,13 @@ strong { font-weight: 700 }
 }
 
 /* --- Heading Styles --- */
-.heading-style-h2 { text-wrap: balance; font-size: 3.5rem; font-weight: 700; line-height: 1.1 }
+.heading-style-h2 { 
+    text-wrap: balance;
+    font-size: 3.5rem; 
+    font-weight: 700;
+     line-height: 1.1;
+     padding-bottom: 1rem;
+ }
 .heading-style-h3 { text-wrap: balance; font-size: 3rem; font-weight: 700; line-height: 1.1 }
 .heading-style-h4 { text-wrap: balance; font-size: 2.5rem; font-weight: 700; line-height: 1.1 }
 .heading-style-h5 { text-wrap: balance; font-size: 2rem; font-weight: 500; line-height: 1.2 }
@@ -183,7 +189,6 @@ strong { font-weight: 700 }
 }
 
 .section_gradient-pink-hero {
-    background-image: linear-gradient(180deg, var(--neutral--light-pink) 20%, var(--neutral--light-tan));
     color: var(--text--primary);
     padding-top: 8.5rem;
     padding-bottom: 7rem
@@ -327,12 +332,12 @@ strong { font-weight: 700 }
 
 .pricing-card:hover {
     border-color: rgba(124, 38, 209, 0.20);
-    box-shadow: 0 0 20px 1px rgba(242, 92, 58, 0.20)
+    /* box-shadow: 0 0 20px 1px rgba(242, 92, 58, 0.20) */
 }
 
 .pricing-card:hover .pricing-card_hover-bg { opacity: 1 }
 .pricing-card:hover .pricing-card_bg { opacity: 0 }
-.pricing-card:hover .button_bg { opacity: 1 }
+/* .pricing-card:hover .button_bg { opacity: 1 } */
 
 .pricing-card_bg {
     pointer-events: none;
@@ -348,7 +353,7 @@ strong { font-weight: 700 }
     z-index: 1;
     opacity: 0;
     pointer-events: none;
-    background-image: linear-gradient(#ffffffe6, #f4e5fab3);
+    background-image: linear-gradient(#ffffffe6, #fff3);
     width: 100%;
     height: 100%;
     transition: opacity .5s;
@@ -532,7 +537,7 @@ strong { font-weight: 700 }
 .comparison-row:last-child { border-bottom: none }
 
 .comparison-row.is-header {
-    background: linear-gradient(135deg, rgba(124, 38, 209, 0.15), rgba(124, 38, 209, 0.05))
+    background: rgb(0 0 0 / 15%);
 }
 
 .comparison-cell {
@@ -1028,7 +1033,9 @@ strong { font-weight: 700 }
 }
 
 .table-header-explanation p:last-child { margin-bottom: 0 }
-.table-header-explanation strong { color: var(--brand--coral); font-weight: 700 }
+.table-header-explanation strong {
+     color: #3dfd98; 
+     font-weight: 700 }
 
 .services-table {
     background: #131335;
@@ -1080,19 +1087,21 @@ strong { font-weight: 700 }
 
 .price-cell {
     font-weight: 600;
-    color: var(--brand--coral);
+    color: #3dfd98;
     font-size: 1rem;
-    text-align: right
+    justify-content: flex-end;
 }
 
 /* --- AI Analytics Intro --- */
 .ai-intro-box {
-    background: linear-gradient(135deg, rgba(124, 38, 209, 0.12), rgba(242, 92, 58, 0.06));
-    border: 1px solid rgba(124, 38, 209, 0.2);
+    background: rgb(0 0 0 / 15%);
+    border: 1px solid #3dfd9838;
     border-radius: 1.25rem;
     padding: 2.5rem;
     margin-bottom: 3.75rem;
     text-align: center
+    
+
 }
 
 .ai-intro-box h3 {
@@ -1110,8 +1119,8 @@ strong { font-weight: 700 }
 }
 
 .example-box {
-    background: rgba(255, 255, 255, 0.05);
-    border-left: 4px solid var(--brand--coral);
+    background: #131335;
+    border-left: 4px solid #3dfd98;
     padding: 1rem;
     border-radius: .5rem;
     font-size: .875rem;
@@ -1574,4 +1583,162 @@ strong { font-weight: 700 }
 
     .chip_left-line,
     .chip_right-line { display: none }
+}
+
+/* custom css overwriting for pricing page */
+.button.is-purple {
+    background-color: #131335 !important;
+    color: var(--text--paragraph-light);
+}
+
+/* ---------- PRICING CLARITY SECTION ---------- */
+.pricing-clarity {
+  background: #131335;
+  padding: 6rem 0;
+}
+
+.pricing-clarity .clarity-intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pricing-clarity .clarity-intro h2 {
+  color: #fff;
+}
+
+.pricing-clarity .clarity-intro p {
+  color: #fff;
+}
+
+.pricing-clarity .clarity-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pricing-clarity .clarity-box {
+    background: rgb(0 0 0 / 30%);
+    border: 1px solid #3dfd9833;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-clarity .clarity-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+}
+
+.pricing-clarity .clarity-box.included .clarity-icon {
+  background: rgba(61, 253, 152, 0.1);
+  color: var(--color-tertiary);
+}
+
+.pricing-clarity .clarity-box.addons .clarity-icon {
+  background: rgba(61, 253, 152, 0.1);
+  color: var(--color-secondary);
+}
+
+.pricing-clarity .clarity-box.ai .clarity-icon {
+  background: rgba(61, 253, 152, 0.1);
+  color: var(--color-tertiary);
+}
+
+.pricing-clarity .clarity-box:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.pricing-clarity .clarity-box:hover::before {
+  transform: scaleX(0);
+}
+
+.pricing-clarity .clarity-box:hover .clarity-icon {
+  transform: none;
+}
+
+.pricing-clarity .clarity-box h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-clarity .clarity-subtitle {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pricing-clarity .clarity-box.included .clarity-subtitle {
+  color: var(--color-tertiary);
+}
+
+.pricing-clarity .clarity-box.addons .clarity-subtitle {
+  color: var(--color-secondary);
+}
+
+.pricing-clarity .clarity-box.ai .clarity-subtitle {
+  color: var(--color-tertiary);
+}
+
+.pricing-clarity .clarity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.pricing-clarity .clarity-list li {
+  padding: 0.5rem 0;
+  color: rgb(255 255 255 / 73%);
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+
+.pricing-clarity .clarity-list li::before {
+  content: "\2022";
+  margin-right: 0.5rem;
+  font-weight: 800;
+}
+
+.pricing-clarity .clarity-box.included .clarity-list li::before {
+  color: var(--color-tertiary);
+}
+
+.pricing-clarity .clarity-box.addons .clarity-list li::before {
+  color: var(--color-secondary);
+}
+
+.pricing-clarity .clarity-box.ai .clarity-list li::before {
+  color: var(--color-tertiary);
+}
+
+.pricing-clarity .clarity-footer {
+  font-size: 0.75rem;
+  color: rgb(255 255 255 / 85%);
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-style: italic;
+  margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .pricing-clarity .clarity-container {
+    grid-template-columns: 1fr;
+    max-width: 28rem;
+    margin: 0 auto;
+  }
 }

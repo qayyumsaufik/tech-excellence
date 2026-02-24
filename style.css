@@ -2142,7 +2142,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .text-color-tertiary {
-  color: var(--color-tertiary) !important;
+  color: var(--color-tertiary);
 }
 
 .nav-wrapper .nav.u-theme-dark {

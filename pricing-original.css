@@ -60,7 +60,7 @@ strong { font-weight: 700 }
 .text-size-small { font-size: .875rem }
 .text-color-primary { color: var(--text--primary) }
 .text-color-secondary { color: var(--text--secondary) }
-.text-color-tertiary { color: var(--text--tertiary) }
+.text-color-tertiary { color: #131335 !important }
 
 .text-color-gradient-highlight {
     background-image: linear-gradient(90deg, var(--brand--purple-light), var(--brand--coral));
@@ -72,7 +72,7 @@ strong { font-weight: 700 }
 /* --- Heading Styles --- */
 .heading-style-h2 { 
     text-wrap: balance;
-    font-size: 3.5rem; 
+    font-size: 3rem; 
     font-weight: 700;
      line-height: 1.1;
      padding-bottom: 1rem;
@@ -417,7 +417,7 @@ strong { font-weight: 700 }
 }
 
 .pricing-card_list_item_icon {
-    background-color: var(--neutral--light-pink);
+    background-color: #131335;
     border-radius: 100%;
     flex-flow: column;
     justify-content: center;
@@ -425,7 +425,12 @@ strong { font-weight: 700 }
     width: 1.25rem;
     height: 1.25rem;
     display: flex;
-    flex: none
+    flex: none;
+    color: #fff
+}
+
+.pricing-card_list_item_icon svg path {
+    fill: #fff
 }
 
 /* --- Pricing Plan (Every Plan Includes) --- */
@@ -581,13 +586,20 @@ strong { font-weight: 700 }
 
 /* --- Security Grid --- */
 .security-grid {
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    grid-template-columns: repeat(6, 1fr);
-    display: grid
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    overflow: hidden
 }
 
-.security-cell { text-align: center }
+.security-cell {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
 
 .security-cell_icon {
     background-color: rgba(255, 255, 255, 0.05);
@@ -1242,7 +1254,9 @@ strong { font-weight: 700 }
 .credit-benefits li {
     margin-bottom: .5rem;
     padding-left: 1.25rem;
-    position: relative
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .credit-benefits li::before {
@@ -1251,6 +1265,125 @@ strong { font-weight: 700 }
     left: 0;
     color: var(--brand--coral);
     font-weight: 800
+}
+
+/* --- Credits Section (Light Theme) --- */
+.credits-section-light {
+    background: #edeef7;
+    padding: 5rem 0
+}
+
+.credits-section-light .border-gradient {
+    border: 1px solid var(--brand--purple-medium);
+    color: #fff;
+}
+
+.credits-section-light .credits-grid {
+    margin-bottom: 0
+}
+
+.credits-section-light .credit-card {
+    background: #fff;
+    border: 1px solid #d6d8e8;
+    transition: none
+}
+
+.credits-section-light .credit-card::before {
+    display: none
+}
+
+.credits-section-light .credit-card:hover {
+    border-color: #d6d8e8;
+    transform: none;
+    box-shadow: none
+}
+
+.credits-section-light .credit-icon {
+    color: #fff;
+    background: #131335;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: .75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center
+}
+
+.credits-section-light .credit-name {
+    color: #131335;
+}
+
+.credits-section-light .credit-description {
+   color: #010101;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.credits-section-light .credit-price {
+    color: #131335
+}
+
+.credits-section-light .credit-price-note {
+    color: #010101;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.credits-section-light .credit-cta {
+    border-color: #131335;
+    color: #131335;
+    background: transparent
+}
+
+.credits-section-light .credit-cta:hover {
+    background: rgba(19, 19, 53, 0.06);
+    transform: none
+}
+
+.credits-section-light .credit-cta.is-primary {
+    background: #131335;
+    color: #fff;
+    border-color: transparent;
+    box-shadow: none
+}
+
+.credits-section-light .credit-cta.is-primary:hover {
+    transform: none;
+    box-shadow: none
+}
+
+.credits-section-light .credit-benefits {
+    color: #555;
+    font-size: .9375rem
+}
+
+.credits-section-light .credit-benefits li {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    color: #010101;
+    font-weight: 500;
+}
+
+.credits-section-light .credit-benefits li::before {
+    display: none
+}
+
+.credit-benefits_icon {
+    background: #131335;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0
+}
+
+.credit-benefits_icon svg {
+    width: 1.125rem;
+    height: 1.125rem
 }
 
 /* --- Simple Footer --- */

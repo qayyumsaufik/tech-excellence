@@ -2186,7 +2186,7 @@ textarea.w-input,textarea.w-select {
     color: var(--color-secondary);
 }
 .purple-font {
-    color: var(--text--secondary);
+    color: #131335;
 }
 
 
@@ -3659,4 +3659,8 @@ textarea.w-input,textarea.w-select {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
+}
+.au-cta__buttons .button.is-purple {
+    background: var(--color-tertiary) !important;
+    color: #131335 !important;
 }

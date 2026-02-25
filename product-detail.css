@@ -8163,7 +8163,7 @@ textarea.w-input,textarea.w-select {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--brand--purple-dark);
+  color: #131335;
   padding: 0 20px 12px;
   margin-bottom: 6px;
   border-bottom: 1px solid rgba(124,38,209,0.12);
@@ -8174,7 +8174,7 @@ textarea.w-input,textarea.w-select {
   align-items: center;
   gap: 14px;
   background: transparent;
-  color: #5a3d6e;
+  color: #131335;
   font-weight: 600;
   padding: 16px 20px;
   border-radius: 14px;

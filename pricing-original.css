@@ -1724,6 +1724,12 @@ strong { font-weight: 700 }
     color: var(--text--paragraph-light);
 }
 
+.enterprise-card-wrapper .button.is-purple {
+    background-color: white !important;
+    color: #131335 !important;
+    border: 1px solid rgba(124, 38, 209, 0.3);
+}
+
 /* ---------- PRICING CLARITY SECTION ---------- */
 .pricing-clarity {
   background: #131335;

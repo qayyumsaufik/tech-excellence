@@ -1,0 +1,1092 @@
+/* ===========================
+   Pricing1 Page Custom Styles
+   =========================== */
+
+/* --- Credits Grid & Cards (Base) --- */
+.credits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    margin-bottom: 3.75rem
+}
+
+.credit-card {
+    background: #fff;
+    border: 1px solid #c5d4f0;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    text-align: left;
+    transition: all .4s;
+    position: relative;
+    overflow: hidden
+}
+
+.credit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #3B82F6;
+    transform: scaleX(1);
+    transform-origin: left
+}
+
+.credit-card:hover {
+    border-color: #93b4f0;
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.1)
+}
+
+/* --- Most Popular Badge --- */
+.credit-card.is-popular {
+    border-color: #131335;
+    border-width: 1px
+}
+
+.credit-card.is-popular:hover {
+    border-color: #131335;
+    box-shadow: none
+}
+
+.credit-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #131335;
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    padding: .375rem 1.25rem;
+    border-radius: 0 0 .5rem .5rem;
+    text-transform: uppercase
+}
+
+/* --- Card Content --- */
+.credit-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #131335;
+    margin-bottom: .375rem
+}
+
+.credit-description {
+    font-size: .9375rem;
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 1.25rem
+}
+
+.credit-price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #3B82F6;
+    margin-bottom: .25rem
+}
+
+.credit-price-note {
+    font-size: .875rem;
+    color: #555;
+    margin-bottom: .25rem
+}
+
+.credit-divider {
+    height: 1px;
+    background: #e2e5ef;
+    margin: 1.25rem 0
+}
+
+.credit-cta {
+    width: 100%;
+    padding: .875rem 1.5rem;
+    border: 1px solid #131335;
+    background: transparent;
+    color: #131335;
+    border-radius: .625rem;
+    font-size: .9375rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s;
+    margin-bottom: 1.75rem;
+    font-family: inherit
+}
+
+.credit-cta:hover {
+    background: rgba(19, 19, 53, 0.06)
+}
+
+.credit-cta.is-primary {
+    background: #3B82F6;
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35)
+}
+
+.credit-cta.is-primary:hover {
+    background: #131335;
+    box-shadow: 0 6px 20px rgba(19, 19, 53, 0.45)
+}
+
+/* --- Benefits --- */
+.credit-benefits-heading {
+    font-size: .75rem;
+    font-weight: 800;
+    color: #131335;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    margin-bottom: .875rem;
+    text-align: left
+}
+
+.credit-benefits {
+    text-align: left;
+    font-size: .9375rem;
+    color: #333;
+    line-height: 1.8;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.credit-benefits li {
+    margin-bottom: .5rem;
+    font-size: .9375rem;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: .625rem
+}
+
+.credit-benefits li::before {
+    display: none
+}
+
+.credit-benefits_icon {
+    background: #131335;
+    border-radius: 50%;
+    width: 1.125rem;
+    height: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0
+}
+
+.credit-benefits_icon svg {
+    width: .75rem;
+    height: .75rem
+}
+
+/* --- Add-Ons --- */
+.credit-addons {
+    margin-top: 1.5rem;
+    text-align: left;
+    background: #f0f4ff;
+    border-left: 3px solid #131335;
+    border-radius: .5rem;
+    padding: 1rem 1.25rem
+}
+
+.credit-addons-heading {
+    font-size: .875rem;
+    font-weight: 700;
+    color: #131335;
+    margin-bottom: .25rem
+}
+
+.credit-addons-text {
+   font-size: .9rem;
+    color: #010101;
+    line-height: 1.5;
+}
+
+/* --- Credits Section (Light Theme) --- */
+.credits-section-light {
+    background: #edeef7;
+    padding: 10rem 0 5rem;
+}
+
+.credits-section-light .border-gradient {
+    border: 1px solid var(--brand--purple-medium);
+    color: #fff;
+}
+
+.credits-section-light .credits-grid {
+    margin-bottom: 0
+}
+
+/* --- How It Works Section --- */
+.pricing-how-it-works {
+    background: #131335;
+    padding: 5rem 0;
+    color: #fff
+}
+
+.how-works-header {
+    text-align: center;
+    margin-bottom: 2rem
+}
+
+.how-works-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: .75rem
+}
+
+.how-works-subtitle {
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+    max-width: 40rem;
+    margin: 0 auto;
+    line-height: 1.7
+}
+
+.how-works-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem
+}
+
+.how-works-step {
+    background: rgb(0 0 0 / 15%);
+    border: 1px solid #3dfd9838;
+    border-radius: 1rem;
+    padding: 2.25rem 1.75rem;
+    text-align: center;
+    transition: all .3s
+}
+
+.how-works-step:hover {
+    transform: translateY(-3px)
+}
+
+.step-icon-wrap {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    background: #fff;
+    color: #131335;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.15);
+    position: relative
+}
+
+.step-icon-wrap::after {
+    content: '';
+    position: absolute;
+    width: 6.875rem;
+    height: 6.875rem;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: step-spin 20s linear infinite
+}
+
+@keyframes step-spin {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+}
+
+.step-num {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #131335
+}
+
+.step-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem
+}
+
+.step-text {
+    font-size: 1.05rem;
+    color: rgb(255, 255, 255);
+    line-height: 1.7
+}
+
+/* --- Transcription Pricing Section --- */
+.transcription-pricing-section {
+    padding: 5rem 0
+}
+
+.tp-header {
+    text-align: center;
+    /* margin-bottom: 3rem */
+}
+
+.tp-tag {
+    display: inline-block;
+    background: #131335;
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    padding: .375rem 1.25rem;
+    border-radius: 2rem;
+    margin-bottom: 1.25rem
+}
+
+.tp-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131335;
+    margin-bottom: .75rem
+}
+
+.tp-subtitle {
+    font-size: 1.25rem;
+    color: #131335;
+    max-width: 40rem;
+    margin: 0 auto;
+    line-height: 1.7
+}
+
+.tp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+    /* margin-bottom: 3rem */
+}
+
+.tp-card {
+    background: #fff;
+    border: 1px solid #e2e5ef;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all .3s;
+    position: relative
+}
+
+.tp-card:hover {
+    box-shadow: 0 8px 30px rgba(19, 19, 53, 0.08);
+    transform: translateY(-3px)
+}
+
+.tp-card--featured {
+    border: 1px solid #131335
+}
+
+.tp-card-label {
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #131335;
+    margin-bottom: .75rem
+}
+
+.tp-card--featured .tp-card-label {
+    color: #131335
+}
+
+.tp-card-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #131335;
+    margin-bottom: .5rem
+}
+
+.tp-card-desc {
+    font-size: 1rem;
+    color: #010101;
+    line-height: 1.6;
+    margin-bottom: 1.5rem
+}
+
+.tp-card-price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #131335;
+}
+
+.tp-card-unit {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #010101;
+}
+
+/* --- Transcription Add-ons --- */
+.tp-addons {
+    background: #131335;
+    border-radius: 1.25rem;
+    padding: 6rem 2.5rem;
+    overflow: hidden;
+    position: relative
+}
+
+.tp-addons-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1
+}
+
+
+.tp-addons-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: .5rem
+}
+
+.tp-addons-subtitle {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    line-height: 1.6
+}
+
+.tp-addons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    position: relative;
+    z-index: 1
+}
+
+.tp-addon-card {
+    background: rgb(0 0 0 / 15%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: .875rem;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .3s
+}
+
+.tp-addon-card:hover {
+    border-color: rgba(255, 255, 255, 0.2)
+}
+
+.tp-addon-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: .625rem;
+    background: #fff;
+    color: #131335;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem
+}
+
+.tp-addon-top {
+    margin-bottom: 1.25rem
+}
+
+.tp-addon-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: .375rem
+}
+
+.tp-addon-desc {
+    font-size: .875rem;
+    color: rgb(255 255 255 / 85%);
+    line-height: 1.5
+}
+
+.tp-addon-price {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #3dfd98
+}
+
+.tp-addon-price .tp-card-unit {
+    color: rgb(255, 255, 255)
+}
+
+/* --- Background Gradient --- */
+.background-gradient-pink-light {
+    background-image: linear-gradient(180deg, #edeef7 20%, var(--neutral--light-tan))
+}
+
+
+/* --- Security / Trust & Compliance --- */
+.security-grid {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    overflow: hidden
+}
+
+.security-cell {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border: 1px solid rgb(255 255 255);
+    background: #f6f6fd;
+}
+
+.security-cell_icon {
+    border-radius: 1rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden
+}
+
+.security-cell_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block
+}
+
+/* --- CTA Section --- */
+.section_small {
+    padding-bottom: 1.5rem
+}
+
+.large-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+}
+
+.request-demo-cta {
+    background-color: #131335;
+    border-radius: 1.25rem;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 4rem;
+    display: flex;
+    position: relative;
+    overflow: hidden
+}
+
+.request-demo-cta_content {
+    z-index: 1;
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2.5rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 40rem;
+    display: flex;
+    position: relative
+}
+
+.request-demo-cta_content_top {
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    position: relative
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center
+}
+
+.blur {
+    filter: blur(80px);
+    pointer-events: none;
+    background-image: radial-gradient(circle closest-side, #4a45ff8c, #7c26d117);
+    width: 60.375rem;
+    height: 36rem;
+    position: absolute
+}
+
+/* ===========================
+   Credit-Based Features Section
+   =========================== */
+
+/* --- Section --- */
+.cb-section {
+    /* background: #131335; */
+    padding: 5rem 0;
+    color: #fff
+}
+
+/* --- Header --- */
+.cb-header {
+    text-align: center;
+}
+
+.cb-tag {
+    display: inline-block;
+    padding: .375rem 1.25rem;
+    color: var(--text--paragraph-light);
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    background-image: linear-gradient(#2e257d, #0c082d);
+    justify-content: center;
+    align-items: center;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 30px;
+}
+
+.cb-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0a2540;
+    margin-bottom: .75rem
+}
+
+.cb-subtitle {
+    font-size: 1.15rem;
+    color: #425466;
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.7
+}
+
+.cb-subtitle strong {
+    color: #131335;
+    font-weight: 700
+}
+
+.cb-section-top{
+        display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 30px;
+}
+/* --- Feature Cards Grid --- */
+.cb-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.cb-feature-card {
+    background: white;
+    border: 1px solid #e2e5ef;
+    border-radius: .875rem;
+    padding: 1.5rem 1.25rem;
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 16px;
+}
+
+.cb-feature-heading {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between;
+    padding: 6px 10px;
+    background: #f6f6fd; */
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.cb-feature-card:hover {
+    border-color: rgba(255, 255, 255, 0.2)
+}
+
+/* --- Feature Icon --- */
+.cb-feature-icon {
+      width: 2.25rem;
+    height: 2.25rem;
+    border-radius: .75rem;
+    background: rgb(246 246 253);
+    color: #131335;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 1.25rem; */
+    padding: 7px;
+}
+
+/* --- Feature Content --- */
+.cb-feature-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0a2540;
+}
+
+.cb-feature-desc {
+    font-size: 15px;
+    color: #425466;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* --- Usage Badge --- */
+.cb-feature-usage {
+    background: #131335;
+    border: 1px solid #3dfd9859;
+    border-radius: .5rem;
+    padding: .625rem .875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.cb-usage-label {
+    font-size: .75rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .03em
+}
+
+.cb-usage-value {
+    font-size: .875rem;
+    font-weight: 700;
+    color: #3dfd98;
+}
+
+/* --- Explainer Box --- */
+.cb-explainer {
+    background: rgb(19 19 53);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    padding: 2.5rem;
+}
+
+.cb-explainer-inner {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.cb-explainer-left {
+    flex: 1
+}
+
+.cb-explainer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* color: #131335; */
+    margin-bottom: .75rem
+}
+
+.cb-explainer-text {
+    font-size: 1rem;
+    /* color: #010101; */
+    line-height: 1.7
+}
+
+.cb-explainer-right {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.cb-formula {
+    background: #3dfd98;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: .5rem;
+    padding: .625rem 1.25rem;
+    /* font-size: .9375rem; */
+    font-weight: 700;
+    color: #131335;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+/* --- Packages --- */
+.cb-packages {
+    text-align: center
+}
+
+.cb-packages-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a2540;
+    margin-bottom: 1.5rem
+}
+
+.cb-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem
+}
+
+.cb-package-card {
+        background: #ffffff;
+    border: 1px solid #e2e5ef;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all .35s ease;
+    position: relative;
+}
+
+.cb-package-card:hover {
+    border-color: #131335;
+}
+
+.cb-package-card--popular {
+    border-color: #131335;
+    background: #ffffff;
+}
+
+.cb-package-card--popular:hover {
+    border-color: #131335;
+}
+
+.cb-package-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3dfd98;
+    color: #131335;
+    font-size: .6875rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    padding: .25rem 1rem;
+    border-radius: 0 0 .5rem .5rem
+}
+
+.cb-package-price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0a2540;
+    margin-bottom: .25rem
+}
+
+.cb-package-credits {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0a2540;
+    margin-bottom: .5rem
+}
+
+.cb-package-desc {
+    font-size: 15px;
+    font-weight: 500;
+    color: #425466;
+    margin-bottom: 1.25rem
+}
+
+.cb-package-btn {
+    display: inline-block;
+    width: 100%;
+    padding: .75rem 1.25rem;
+    border: 1px solid #222;
+    background: transparent;
+    color: #222;
+    border-radius: .5rem;
+    font-size: .875rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    font-family: inherit;
+}
+
+.cb-package-btn:hover {
+    border-color: rgba(255, 255, 255, 0.35)
+}
+
+.cb-package-btn--primary {
+        background: #131335;
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.background-white{
+        background: white;
+}
+
+
+/* --- Responsive: Tablet (max-width: 991px) --- */
+@media screen and (max-width: 991px) {
+    .credits-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .how-works-steps {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .security-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .tp-addons-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .cb-features-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .cb-packages-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .cb-explainer-inner {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center
+    }
+
+    .cb-explainer-right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+/* --- Responsive: Mobile (max-width: 767px) --- */
+@media screen and (max-width: 767px) {
+    .credits-grid {
+        grid-template-columns: 1fr
+    }
+
+    .how-works-steps {
+        grid-template-columns: 1fr
+    }
+
+    .how-works-title {
+        font-size: 1.75rem
+    }
+
+    .pricing-how-it-works {
+        padding: 3.5rem 0
+    }
+
+    .tp-grid {
+        grid-template-columns: 1fr
+    }
+
+    .tp-addons-grid {
+        grid-template-columns: 1fr
+    }
+
+    .tp-title {
+        font-size: 1.75rem
+    }
+
+    .tp-addons {
+        padding: 2rem 1.25rem
+    }
+
+    .transcription-pricing-section {
+        padding: 3.5rem 0
+    }
+
+    .security-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .request-demo-cta {
+        padding: 4rem 1.5rem
+    }
+
+    .request-demo-cta_content {
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .large-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+
+    .section_small {
+        padding-bottom: 1rem
+    }
+
+    .blur {
+        width: 50.9375rem;
+        height: 30.375rem
+    }
+
+    .cb-section {
+        padding: 3.5rem 0
+    }
+
+    .cb-title {
+        font-size: 1.75rem
+    }
+
+    .cb-subtitle {
+        font-size: 1rem
+    }
+
+    .cb-features-grid {
+        grid-template-columns: 1fr
+    }
+
+    .cb-packages-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .cb-explainer {
+        padding: 1.5rem
+    }
+
+    .cb-explainer-inner {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center
+    }
+
+    .cb-explainer-right {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .cb-formula {
+        width: 100%
+    }
+
+    .cb-package-price {
+        font-size: 1.75rem
+    }
+
+    .cb-package-credits {
+        font-size: .8125rem
+    }
+
+    .cb-package-desc {
+        font-size: .75rem
+    }
+
+    .cb-package-btn {
+        font-size: .75rem;
+        padding: .625rem 1rem
+    }
+
+    .cb-package-badge {
+        font-size: .5625rem;
+        padding: .1875rem .75rem
+    }
+
+    .cb-package-card {
+        padding: 1.5rem 1rem
+    }
+}

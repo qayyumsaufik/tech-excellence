@@ -187,14 +187,6 @@
     // Stagger-up for stat cards
    
 
-    // Stagger-up for product category cards
-    var proCatCards = gsap.utils.toArray(".pro-cat-card");
-    if (proCatCards.length) {
-      gsap.from(proCatCards, {
-        y: 60, opacity: 0, duration: 0.6, stagger: 0.15, ease: "power2.out",
-        scrollTrigger: { trigger: ".pro-cat-grid", start: "top 80%", toggleActions: "play none none reverse" },
-      });
-    }
 
     // Border-gradient tags
     gsap.utils.toArray(".border-gradient").forEach(function (el) {

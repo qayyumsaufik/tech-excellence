@@ -1,0 +1,12 @@
+# robots.txt for thetechexcellence.com
+# Learn more: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+
+# Allow all search engines and AI bots to crawl the site
+User-agent: *
+Disallow: /assets/
+Disallow: /animations/
+Disallow: /script/
+Disallow: /about.html
+
+# Sitemap location
+Sitemap: https://thetechexcellence.com/sitemap.xml

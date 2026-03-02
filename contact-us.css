@@ -1,0 +1,322 @@
+/* ============================================
+   CONTACT US PAGE
+   ============================================ */
+
+/* --- Hero Section --- */
+.section_demo-hero {
+  background: var(--color-primary);
+  padding-top: 5.5rem;
+  padding-bottom: 6rem;
+}
+
+.section_demo-hero > .section-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin-bottom: 5rem;
+}
+
+.contact {
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.contact_wrapper {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  max-width: 36rem;
+}
+
+/* --- Tag Badge --- */
+.section_demo-hero .border-gradient {
+  color: var(--text--paragraph-light, rgba(255, 255, 255, 0.85));
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-image: linear-gradient(#2e257d, #0c082d);
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.0625rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+  display: flex;
+  border-radius: 999px;
+  height: 36px;
+  align-self: flex-start;
+}
+
+/* --- Heading --- */
+.section_demo-hero .heading-style-h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.section_demo-hero .text-color-gradient-highlight {
+  color: var(--color-secondary);
+  -webkit-text-fill-color: var(--color-secondary);
+}
+
+/* --- Checklist --- */
+.section_demo-hero .custom-list_item_icon {
+  background-color: var(--color-secondary);
+}
+
+.section_demo-hero .text-size-large {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* --- Form Card --- */
+.contact-form_wrapper.demo {
+  background-color: #f6f6fd;
+  border-radius: 1.25rem;
+  flex: none;
+  width: 100%;
+  max-width: 38rem;
+  padding: 2.5rem 2.5rem 2rem;
+}
+
+.form_block {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  flex-flow: column;
+  display: flex;
+}
+
+.form_block .eyebrow {
+  color: var(--color-primary);
+}
+
+.form_col {
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  flex-flow: column;
+  display: flex;
+}
+
+.form_grid {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.form_input_wrapper {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  flex-flow: column;
+  display: flex;
+}
+
+.form_input_wrapper.is-full {
+  grid-column: 1 / -1;
+}
+
+.form_label {
+  color: #010101;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.required-star {
+  color: #e53935;
+}
+
+.form_input {
+  background-color: #fff;
+  border: 1px solid #d0d5dd;
+  border-radius: 0.5rem;
+  height: 2.75rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.9375rem;
+  color: var(--color-primary);
+  transition: border-color 0.3s ease;
+}
+
+.form_input:focus {
+  border-color: var(--color-primary);
+  outline: 0;
+}
+
+.form_input.is-select-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23667085' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.875rem center;
+  padding-right: 2.5rem;
+}
+
+.form_input.is-text-area {
+  height: auto;
+  min-height: 5.5rem;
+  resize: vertical;
+}
+
+/* --- Submit Button --- */
+.contact-form_wrapper .cta-wrapper.is-form-submit {
+  background: var(--color-primary);
+  border-radius: 0.625rem;
+}
+
+.contact-form_wrapper .button.is-form-submit {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 0.625rem;
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.contact-form_wrapper .button.is-form-submit:hover {
+  opacity: 0.9;
+  background-color: transparent;
+}
+
+/* --- Success / Error States --- */
+.contact-form_wrapper .w-form-done {
+  background-color: rgba(61, 253, 152, 0.1);
+  color: var(--color-primary);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.contact-form_wrapper .w-form-fail {
+  background-color: #fef3f2;
+  color: #b42318;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+/* --- Tablet (≤991px) --- */
+@media screen and (max-width: 991px) {
+  .section_demo-hero {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .section_demo-hero > .section-divider {
+    margin-bottom: 3.5rem;
+  }
+
+  .contact {
+    flex-flow: column;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    align-items: stretch;
+  }
+
+  .contact_wrapper {
+    max-width: none;
+  }
+
+  .contact-form_wrapper.demo {
+    width: 100%;
+    max-width: none;
+  }
+
+  .section_demo-hero .heading-style-h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* --- Mobile (≤767px) --- */
+@media screen and (max-width: 767px) {
+  .section_demo-hero {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
+
+  .section_demo-hero > .section-divider {
+    margin-bottom: 2.5rem;
+  }
+
+  .contact {
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2.5rem;
+  }
+
+  .contact_wrapper {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
+
+  .section_demo-hero .heading-style-h2 {
+    font-size: 2.25rem;
+  }
+
+  .contact-form_wrapper.demo {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+  .form_block {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
+
+  .form_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Small mobile (≤479px) --- */
+@media screen and (max-width: 479px) {
+  .section_demo-hero {
+    padding-top: 4.1rem;
+    padding-bottom: 3rem;
+  }
+
+  .section_demo-hero > .section-divider {
+    margin-bottom: 2rem;
+  }
+
+  .contact {
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+
+  .section_demo-hero .heading-style-h2 {
+    font-size: 1.75rem;
+  }
+
+  .section_demo-hero .border-gradient {
+    font-size: 0.75rem;
+    height: 30px;
+  }
+
+  .contact-form_wrapper.demo {
+    padding: 1.5rem 1.25rem 1.25rem;
+  }
+
+  .form_col {
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;
+  }
+
+  .contact-form_wrapper .button.is-form-submit {
+    height: 2.75rem;
+    font-size: 0.9375rem;
+  }
+}

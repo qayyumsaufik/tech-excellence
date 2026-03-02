@@ -7935,7 +7935,7 @@ textarea.w-input,textarea.w-select {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--text--primary);
+    background: rgba(255, 255, 255, 0.7);
     display: inline-block;
 }
 
@@ -8241,6 +8241,9 @@ textarea.w-input,textarea.w-select {
   gap: 48px;
   align-items: start;
   scroll-margin-top: 100px;
+  background: #fff;
+    padding: 30px;
+    border-radius: 22px;
 }
 
 .cs-tab-text h3 {
@@ -8295,6 +8298,7 @@ textarea.w-input,textarea.w-select {
   object-fit: cover;
   display: block;
   border-radius: 24px;
+  border: 2px solid #1313353d;
 }
 
 /* ========== CS: USE CASES ========== */
@@ -8471,10 +8475,12 @@ textarea.w-input,textarea.w-select {
   }
   .cs-vtab-sidebar {
     position: sticky;
-    top: 0;
-    z-index: 10;
-    background: linear-gradient(180deg, #f0e6f6, #f0e6f6 90%, transparent);
-    padding: 12px 0 16px;
+        top: 64px;
+        z-index: 99;
+        background: #fafafa;
+        padding: 12px 0 16px;
+        border-radius: 10px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
   }
   .cs-vtab-sidebar-inner {
     flex-direction: row;
@@ -8495,9 +8501,9 @@ textarea.w-input,textarea.w-select {
     display: none;
   }
   .cs-vtab-button.active {
-    background: linear-gradient(135deg, #7C26D1, #461276);
-    color: #ffffff;
-    border-radius: 12px;
+    background: #131335;
+        color: #ffffff;
+        border-radius: 12px;
   }
   .cs-tab-content {
     grid-template-columns: 1fr;

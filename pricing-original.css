@@ -1482,8 +1482,8 @@ strong {
 }
 
 .credits-section-light .credit-description {
-    color: #010101;
-    font-size: 1rem;
+    color: #425466;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -1492,9 +1492,9 @@ strong {
 }
 
 .credits-section-light .credit-price-note {
-    color: #010101;
-    font-size: .875rem;
-    font-weight: 400;
+    color: #425466;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .credits-section-light .credit-cta {
@@ -1529,8 +1529,8 @@ strong {
     padding-left: 0;
     display: flex;
     align-items: center;
-    gap: .625rem;
-    color: #010101;
+    gap: 15px;
+    color: #425466;
     font-weight: 500;
 }
 
@@ -1993,12 +1993,6 @@ strong {
 .button.is-purple {
     background-color: #131335 !important;
     color: var(--text--paragraph-light);
-}
-
-.enterprise-card-wrapper .button.is-purple {
-    background-color: white !important;
-    color: #131335 !important;
-    border: 1px solid rgba(124, 38, 209, 0.3);
 }
 
 /* ---------- PRICING CLARITY SECTION ---------- */

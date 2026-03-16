@@ -7866,11 +7866,11 @@ textarea.w-input,textarea.w-select {
 }
 
 .platform-sticky-wrap .how-it-works-text_wrap .heading-style-h5 {
-    color: var(--text--primary) !important;
+    color: #0a2540 !important;
 }
 
 .platform-sticky-wrap .how-it-works-text_wrap .text-size-medium {
-    color: #262626 !important;
+    color: #425466 !important;
 }
 
 .platform-sticky-wrap .how-it-works--big-card_number {
@@ -7991,7 +7991,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-solution-text h2 {
-  font-size: 3rem;
+  font-size: 44px;
   font-weight: 700;
   line-height: 1.1;
   color: #ffffff;
@@ -8000,7 +8000,8 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-solution-text > p {
-  font-size: 1.2rem;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.7;
   color: rgba(255,255,255,0.8);
   margin-bottom: 40px;
@@ -8015,7 +8016,7 @@ textarea.w-input,textarea.w-select {
 
 .cs-differentiator-box .cs-diff-label {
   color: #3dfd98;
-  font-size: 0.875rem;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -8024,7 +8025,8 @@ textarea.w-input,textarea.w-select {
 
 .cs-differentiator-box p {
   color: rgba(255,255,255,0.75);
-  font-size: 1rem;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.7;
 }
 
@@ -8062,7 +8064,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-section-header h2 {
-  font-size: 3rem;
+  font-size: 44px;
   font-weight: 700;
   line-height: 1.1;
   color: #131335;
@@ -8071,8 +8073,9 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-section-header p {
-  font-size: 1.25rem;
-  color: #5a3d6e;
+  font-size: 16px;
+  color: #425466;
+ font-weight: 500;
   line-height: 1.6;
 }
 
@@ -8121,15 +8124,16 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-step-card h3 {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
-  color: #010101;
+  color: #0a2540;
   margin-bottom: 16px;
 }
 
 .cs-step-card p {
-  font-size: 1.05rem;
-  color: #5a3d6e;
+  font-size: 15px;
+  color: #425466;
+  font-weight: 500;
   line-height: 1.7;
 }
 
@@ -8247,18 +8251,26 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-tab-text h3 {
-  font-size: 2rem;
+  font-size: 22px;
   font-weight: 700;
-  color: #010101;
+  color: #0a2540;
   margin-bottom: 16px;
   line-height: 1.2;
 }
 
 .cs-tab-text > p {
-  font-size: 1.1rem;
-  color: var(--text--primary);
+  font-size: 15px;
+  font-weight: 500;
+  color: #425466;
   line-height: 1.7;
   margin-bottom: 20px;
+}
+
+.cs-key-benefits-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0a2540;
+  margin: 0 0 8px 0;
 }
 
 .cs-feature-list {
@@ -8274,8 +8286,9 @@ textarea.w-input,textarea.w-select {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  font-size: 1rem;
-  color: var(--text--primary);;
+  font-size: 15px;
+  color: #425466;
+  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -8357,7 +8370,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-usecase-card h3 {
-  font-size: 1.35rem;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -8384,7 +8397,8 @@ textarea.w-input,textarea.w-select {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.95rem;
+  font-size: 15px;
+  font-weight: 500;
   transition: transform 0.3s ease;
 }
 
@@ -8413,7 +8427,8 @@ textarea.w-input,textarea.w-select {
 }
 
 .cs-trust-line {
-  font-size: 0.875rem;
+  font-size: 14px;
+  font-weight: 400;
   opacity: 0.7;
   position: relative;
   z-index: 1;

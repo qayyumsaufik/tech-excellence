@@ -6,7 +6,17 @@ User-agent: *
 Disallow: /assets/
 Disallow: /animations/
 Disallow: /script/
-Disallow: /about.html
+
+# Block old WordPress/WooCommerce pages (no longer exist)
+Disallow: /product-category/
+Disallow: /product/
+Disallow: /shop/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
+Disallow: /wp-content/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
 
 # Sitemap location
 Sitemap: https://thetechexcellence.com/sitemap.xml

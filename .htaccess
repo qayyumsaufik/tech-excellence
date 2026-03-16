@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# 1. Redirect .html URLs to clean URLs (301 permanent)
+#    Skip index.html (homepage) and verification files
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteCond %{REQUEST_URI} !^/index\.html$ [NC]
+RewriteCond %{REQUEST_URI} !^/google [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 2. Internally serve the .html file for clean URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)$ /$1.html [L]

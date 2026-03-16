@@ -7,13 +7,13 @@
   <meta name="description" content="Meet Tech Excellence: delivering intelligent AI agents beyond automation. We automate workflows, connect systems & drive business intelligence with enterprise security.">
   <meta name="keywords" content="intelligent automation, business automation, AI agents company, workflow automation platform">
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://thetechexcellence.com/about-us.html" />
+  <link rel="canonical" href="https://thetechexcellence.com/about-us" />
 
   <!-- Open Graph (Facebook, LinkedIn) -->
   <meta property="og:title" content="About Tech Excellence — Intelligent Automation & AI Agents" />
   <meta property="og:description" content="Intelligent AI agents for intelligent automation and business transformation." />
   <meta property="og:image" content="https://thetechexcellence.com/assets/header-logo.png" />
-  <meta property="og:url" content="https://thetechexcellence.com/about-us.html" />
+  <meta property="og:url" content="https://thetechexcellence.com/about-us" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tech Excellence" />
 
@@ -35,6 +35,113 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
+
+  <!-- 1. AboutPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Tech Excellence | AI Innovation Company",
+    "url": "https://thetechexcellence.com/about-us",
+    "description": "Learn about Tech Excellence - the team behind ConvoSense and other AI-powered products building the future of conversation intelligence.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "url": "https://thetechexcellence.com"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://thetechexcellence.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Us",
+          "item": "https://thetechexcellence.com/about-us"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- 2. Organization Schema with Product Catalog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Tech Excellence",
+    "url": "https://thetechexcellence.com",
+    "logo": "https://thetechexcellence.com/assets/header-logo.png",
+    "description": "Tech Excellence builds intelligent AI-powered solutions including ConvoSense, an AI-driven call analytics platform that transforms business workflows.",
+    "slogan": "Beyond Automation. Into Intelligence.",
+    "foundingDate": "2024",
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "Islamabad, Pakistan"
+    },
+    "areaServed": "Worldwide",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot 349 & 350, Street 01, I-9/3",
+      "addressLocality": "Islamabad",
+      "addressRegion": "Islamabad Capital Territory",
+      "postalCode": "44000",
+      "addressCountry": "PK"
+    },
+    "telephone": "+92-51-835-6733",
+    "email": "info@thetechexcellence.com",
+    "serviceType": [
+      "AI Agent Development",
+      "Conversation Intelligence Solutions",
+      "Call Recording Analytics",
+      "Compliance Monitoring Software",
+      "Workflow Automation",
+      "Predictive Analytics Solutions"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tech Excellence AI Products",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "ConvoSense",
+            "description": "AI-powered conversation intelligence platform"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "CommandCore",
+            "description": "AI workflow command center - Coming Soon"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "Lead Sense",
+            "description": "AI-powered lead intelligence - Coming Soon"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "Engagebot",
+            "description": "AI engagement automation - Coming Soon"
+          }
+        }
+      ]
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -48,7 +155,7 @@
         data-w-id="6b4ff9b2-fc84-4be4-f185-3e4503b41c41" role="banner" data-duration="400"><a id="skiptomain"
           role="button" href="#main" class="skip-to-main">Text Link</a>
         <div class="container-large">
-          <div class="nav_row"><a href="index.html" aria-label="Home link" aria-current="page"
+          <div class="nav_row"><a href="index" aria-label="Home link" aria-current="page"
               class="nav_brand w-nav-brand w--current">
               <div class="nav_logo">
                 <img class="dark-theme-logo" src="assets/header-logo.png" alt="Tech Excellence logo" loading="eager" />
@@ -59,10 +166,10 @@
             <nav role="navigation" class="nav_menu w-nav-menu">
               <div class="nav_menu_wrapper">
                 <div class="nav_menu_links">
-                  <a href="index.html" class="nav_link w-inline-block">
+                  <a href="index" class="nav_link w-inline-block">
                     <div>Home</div>
                   </a>
-                  <a href="about-us.html" class="nav_link w-inline-block">
+                  <a href="about-us" class="nav_link w-inline-block">
                     <div>About</div>
                   </a>
                   <div data-hover="true" data-delay="400" class="nav_dropdown w-dropdown">
@@ -83,7 +190,7 @@
                     </div>
                     <nav class="nav_dropdown_menu is-platform w-dropdown-list">
                       <div class="nav_dropdown_menu_wrapper">
-                        <div class="nav_dropdown_menu_card-wrapper"><a href="product-detail.html"
+                        <div class="nav_dropdown_menu_card-wrapper"><a href="product-detail"
                             class="platform_card w-inline-block">
                             <div class="light-gradient_card_bg"></div>
                             <div class="platform_card_header">
@@ -98,7 +205,7 @@
                             <p class="platform_card_description">Analyzes 100% of call recordings to generate accurate transcripts, sentiment analysis, compliance alerts, and risk indicators automatically.</p>
                           </a></div>
                         <div class="nav_dropdown_menu_links">
-                          <div class="nav_dropdown_menu_links_col"><a href="product-detail.html"
+                          <div class="nav_dropdown_menu_links_col"><a href="product-detail"
                               class="nav_dropdown_menu_link w-inline-block">
                               <div class="nav_dropdown_menu_link_icon">
                                 <img src="assets/hero_card_leaf.png" alt="" loading="eager"
@@ -141,22 +248,22 @@
                       </div>
                     </nav>
                   </div>
-                  <a href="pricing1.html" class="nav_link w-inline-block">
+                  <a href="pricing" class="nav_link w-inline-block">
                     <div>Pricing</div>
                   </a>
-                  <a href="contact-us.html" class="nav_link w-inline-block">
+                  <a href="contact-us" class="nav_link w-inline-block">
                     <div>Contact Us</div>
                   </a>
                 </div>
 
                 <div class="cta-wrapper is-nav"><a aria-label="Tech Excellence App (opens a new tab)"
-                    id="w-node-_6b4ff9b2-fc84-4be4-f185-3e4503b41ce3-03b41c41" href="https://convosense.thetechexcellence.com/login"
+                    id="w-node-_6b4ff9b2-fc84-4be4-f185-3e4503b41ce3-03b41c41" href="https://convosense.thetechexcellence.com/login" target="_blank"
                     class="button is-secondary-nav w-inline-block">
                     <div class="button_bg is-secondary-nav"></div>
                     <div class="button_content">
                       <div>Log In</div>
                     </div>
-                  </a><a href="https://convosense.thetechexcellence.com/signup"
+                  </a><a href="https://convosense.thetechexcellence.com/signup" target="_blank"
                     class="button is-nav w-inline-block">
                     <div class="button_bg is-nav"></div>
                     <div class="button_content">
@@ -199,7 +306,7 @@
               different form and give them a chance to discover hidden talents and share their emotions with
               enterprise-grade technology.</p>
             <div class="au-hero__cta">
-              <a href="contact-us.html" class="button is-purple w-inline-block">
+              <a href="scheduling.html" class="button is-purple w-inline-block">
                 <div class="button_bg is-purple"></div>
                 <div class="button_content">
                   <div>Get In Touch</div>
@@ -495,7 +602,15 @@
             <h2 class="heading-style-h3 text-align-center">Where We <span class="green-font">Work</span></h2>
             <div class="au-location__card">
               <div class="au-location__map">
-                <img src="assets/map-img.webp" alt="Office location map" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6641.730930511527!2d73.05937982756984!3d33.66064766874741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df964778660939%3A0x1d6f29e1e948cfe6!2sSAUFIK!5e0!3m2!1sen!2s!4v1772531305126!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
               </div>
               <div class="au-location__info">
                 <div class="au-location__pin">
@@ -684,7 +799,7 @@
             <p class="text-size-large au-cta__desc">Be part of a mission-driven team building the future of AI. We're
               always looking for passionate minds.</p>
             <div class="au-cta__buttons">
-              <a href="https://convosense.thetechexcellence.com/login" class="button is-purple w-inline-block">
+              <a href="https://convosense.thetechexcellence.com/login" target="_blank" class="button is-purple w-inline-block">
                 <div class="button_bg is-purple"></div>
                 <div class="button_content">
                   <div>Join Us</div>
@@ -695,7 +810,7 @@
                   </svg>
                 </div>
               </a>
-              <a href="/contact-us.html" class="button is-secondary w-inline-block">
+              <a href="/contact-us" class="button is-secondary w-inline-block">
                 <div class="button_content">
                   <div>Connect</div>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -717,7 +832,7 @@
       <div class="container-large">
         <div class="au-footer__top">
           <div class="au-footer__brand-col">
-            <a href="index.html" class="au-footer__brand">
+            <a href="index" class="au-footer__brand">
               <img src="assets/header-logo.png" alt="Tech Excellence logo" loading="lazy"
                 style="height: 54px; width: auto;" />
             </a>
@@ -729,18 +844,19 @@
             <div class="au-footer__col">
               <div class="eyebrow text-weight-bold" style="color: var(--color-secondary);">Useful Links</div>
               <div class="au-footer__links">
-                <a href="index.html" class="au-footer__link">Home</a>
-                <a href="about-us.html" class="au-footer__link">About</a>
-                <a href="product-detail.html" class="au-footer__link">Products</a>
-                <a href="pricing1.html" class="au-footer__link">Pricing</a>
+                <a href="index" class="au-footer__link">Home</a>
+                <a href="about-us" class="au-footer__link">About</a>
+                <a href="product-detail" class="au-footer__link">Products</a>
+                <a href="pricing" class="au-footer__link">Pricing</a>
+                <a href="contact-us" class="au-footer__link">Contact Us</a>
               </div>
             </div>
             <div class="au-footer__col">
               <div class="eyebrow text-weight-bold" style="color: var(--color-secondary);">Reach us out</div>
               <div class="au-footer__links">
                 <p class="au-footer__label">For General Queries</p>
-                <a href="mailto:accounts@thetechexcellence.com"
-                  class="au-footer__link">accounts@thetechexcellence.com</a>
+                <a href="mailto:info@thetechexcellence.com"
+                  class="au-footer__link">info@thetechexcellence.com</a>
                 <a href="tel:+92518356733" class="au-footer__link">Ph: +92 51 835-6733</a>
               </div>
             </div>

@@ -170,7 +170,7 @@ figcaption {
 
 .heading-style-h3 {
     text-wrap: balance;
-    font-size: 3rem;
+    font-size: 44px;
     font-weight: 700;
     line-height: 1.1
 }
@@ -181,7 +181,7 @@ figcaption {
 
 .heading-style-h1 {
     text-wrap: balance;
-    font-size: 4rem;
+    font-size: 44px;
     font-weight: 700;
     line-height: 1.1
 }
@@ -204,7 +204,7 @@ figcaption {
 
 .heading-style-h4 {
     text-wrap: balance;
-    font-size: 2.5rem;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.1
 }
@@ -249,18 +249,21 @@ figcaption {
 }
 
 .text-size-large {
-    font-size: 1.25rem
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .text-size-large:where(.w-variant-69908f08-fb9e-ecf7-ab34-33e0f61d1165) {
-    color: var(--text--paragraph-dark)
+    color: #425466;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .heading-style-h5 {
     text-wrap: balance;
-    font-size: 2rem;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 1.2
+    line-height: 1.2;
 }
 
 .container-large {
@@ -448,7 +451,8 @@ figcaption {
 }
 
 .text-size-medium {
-    font-size: 1.125rem
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .text-size-medium:where(.w-variant-69908f08-fb9e-ecf7-ab34-33e0f61d1165) {
@@ -1635,9 +1639,7 @@ figcaption {
     text-transform: none
 }
 
-.text-color-primary {
-    color: var(--text--primary)
-}
+
 
 .section_small {
     padding-bottom: 1.5rem
@@ -3179,7 +3181,7 @@ figcaption {
     .nav_menu-button_wrapper {
         grid-column-gap: .3125rem;
         grid-row-gap: .3125rem;
-        background-color: #3dfd98a1;
+        background-color: #3dfd98d9;
         border-radius: .375rem;
         flex-flow: column;
         justify-content: center;
